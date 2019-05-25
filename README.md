@@ -3,6 +3,8 @@
 Статья основана на http://bit.ly/2YMiZkq (для SSL) и http://bit.ly/2YS14ZN (для домена).
 
 ## Структура репозитория
+
+```
 ├── etc
 │   └── zabbix
 │       ├── scripts
@@ -21,6 +23,7 @@
 ├── README.me
 ├── domain_expiration.xml
 └── ssl_cert_expiration.xml
+```
 
 ## Установка и настройка скриптов для SSL и Доменов
 
