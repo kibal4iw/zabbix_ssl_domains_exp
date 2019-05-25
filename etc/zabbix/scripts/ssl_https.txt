@@ -1,0 +1,4 @@
+google.com
+mail.google.com
+facebook.com
+m.facebook.com
