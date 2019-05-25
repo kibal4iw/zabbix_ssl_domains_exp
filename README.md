@@ -47,6 +47,9 @@
 
 Содержимое папки /etc/zabbix/zabbix_agentd.d перенестите в соотв. папку на сервере.
 
+В основном файле /etc/zabbix/zabbix_agentd.conf увеличить параметр Timeout.
+По-умолчанию, он установлен в значение 3, установите его в 10, чтобы Zabbix точно успел все проверить.
+
 Перезапустите агента Zabbix
 
 > sudo systemctl restart zabbix-agent
