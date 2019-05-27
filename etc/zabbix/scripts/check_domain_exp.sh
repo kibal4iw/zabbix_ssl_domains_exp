@@ -13,9 +13,10 @@ ru|net.ru|org.ru|pp.ru)
 DATE=`whois $SERVER | grep paid-till | awk '{ print $2 }' | sed 's/\./-/g'`
 ;;
 com|net)
-DATE=`whois $SERVER | grep "Registration Expiration Date:" | sed 's/Registrar Registration Expiration Date: //g;s/T/ /g' | awk '{ print $1 }'`
+# DATE=`whois $SERVER | grep "Registration Expiration Date:" | sed 's/Registrar Registration Expiration Date: //g;s/T/ /g' | awk '{ print $1 }'`
+DATE=`whois $SERVER | grep "Registry Expiry Date:" | sed 's/Registry Expiry Date: //g;s/T/ /g' | awk '{ print $1 }'`
 ;;
-com.ua|ua|pp.ua)
+com.ua|ua|pp.ua|kharkiv.ua|kh.ua|eu)
 DATE=`whois $SERVER | grep expires | awk '{ print $2 }' | sed 's/\./-/g'`
 ;;
 org)
